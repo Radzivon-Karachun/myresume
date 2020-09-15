@@ -1,0 +1,448 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    
+    background-color: #E7E7E7;
+    padding-bottom: 60px;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #333;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.container_a {
+    min-width: 300px;
+    margin: 25px auto;
+}
+
+.container_b {
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+.container_c {
+    min-height: 250px;
+    position: relative;
+    min-width: 500px;
+    margin: 0 auto;
+    z-index: 1020;
+}
+
+.container_d {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1020;
+}
+
+
+.container_c_gr {
+    min-height: 35px;
+    position: absolute;
+    min-width: 100%;
+    margin: 265px auto;
+    background-color: #11B57C;
+    z-index: 1000;
+    text-align: right;
+}
+
+.container__data {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+/* INTRO */
+
+.intro {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-color: #11B57C;
+    margin-bottom: 200px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+
+.intro__about {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    z-index: 100;
+}
+
+/* INTRO-FACE */
+
+.intro-face {
+    width: 1000px;
+    height: 300px;
+    top: 150px;
+    position: relative;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    z-index: 1000;
+    transform: translate(-50% 0)
+}
+
+.intro-face-c {
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    z-index: 1000;
+    transform: translate(-50% 0)
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1020;
+}
+
+.header__inner {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #11B57C;
+    z-index: 1070;
+    
+}
+
+.header__inner__prepos {
+    width: 100%;
+    margin: 0;
+}
+
+.header__logo__white {
+    margin: 0;
+    max-width: 300px;
+    font-family: 'Ubuntu', sans-serif;
+    
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+
+.header__poslogo {
+    margin: 0;
+    max-width: 300px;
+    font-family: 'Ubuntu', sans-serif;
+    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.header__text {
+    text-align: center;
+}
+
+/* HEADER__NAV */
+
+.header__nav {
+    text-align: right;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    
+    color: #fff;
+    text-decoration: none;
+    
+    transition: color .2s linear;
+}
+
+.nav__link__logo {
+    position: relative;
+    
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .5px;
+        
+    background-color: #CCFF00;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1; 
+    
+    transition: opacity .2s linear;
+}
+
+.nav__link:hover {
+    color: #CCFF00;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: #CCFF00;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+/* Section */
+
+.section {
+    padding: 30px 0;
+    min-height: 70vh;
+
+}
+
+.section__header {
+    width: 100%;
+    margin: 10px auto;    
+    margin-top: 120px;
+    text-align: center
+}
+
+.section__title {
+    font-family: 'Ubuntu', sans-serif;
+    color: #11B57C;
+}
+
+.section__title_s {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #11B57C;
+}
+
+
+.wrapper {
+    width: 1000px;
+    position: relative;
+    margin: 150px auto;
+    z-index: 1000; 
+    
+    display: inline-flex;
+    justify-content: center;
+    letter-spacing: 20px;
+}
+
+
+
+
+.wrapper_intro {
+
+    font-size: 1.33em;
+    padding: 2px;
+    margin: 4px;
+    letter-spacing: 20px;
+    z-index: 1100;
+    justify-content: center;
+
+}
+
+.wrapper_intro i {
+
+    transition: all ease-in-out 150ms;
+
+}
+
+
+a i.fa {    
+    color: #5095D8;
+}
+
+.wrapper i {
+    padding: 10px;
+    text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+    transition: all ease-in-out 150ms;
+}
+
+
+
+.wrapper i:hover {
+    
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper_grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: repeat(1, 300px);
+    grid-gap: 20px;
+}
+
+.grid_progress {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: repeat(1, 300px);
+    grid-gap: 20px;
+}
+
+.all_progress_bar {
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+.one_progress_bar {
+    width: 90%;
+    margin: auto;
+}
+
+.text_progress_bar {
+    width: 90%;
+    
+}
+
+.container_grid {
+    display: grid;
+    grid-template-columns: 120px .97fr;
+    grid-template-rows: repeat(4, 30px);
+    grid-column-gap: 10px
+}
+
+#head{
+    width: 100%;
+    min-height: 40px;
+    position: fixed;
+    background: #11B57C;
+    z-index: 1100;
+    display: block;
+}
+/* Что бы наш следующий блок не заезжал под шапку 
+как только страница загрузилась добавим отступ. */
+
+#my__content{
+    width: 100%;
+    
+    margin-top: 100px;
+}
+
+.hor__line::after {
+    content: "";
+    display: block;
+    width: 97%;
+    height: 2px;
+        
+    background-color: #E7E7E7;
+    visibility: visible;
+    
+    position: relative;
+    left: 0;
+    z-index: 1; 
+}
+
+.hor__line:hover {
+    color: #CCFF00;
+}
+
+
+
+
+
+
+
+.light-grey {
+    color: #000;
+    background-color: #f1f1f1;
+}
+
+.round {
+    border-radius: 4px;
+}
+
+.container_prog {
+    padding: 0.01em 16px;
+}
+
+.container_prog:after,
+.container_prog:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.blue {
+    color:#fff;
+    background-color: #1C58B0;
+}
+
+.cont_accord {
+    width: 1000px;
+    position: relative;
+    margin: 40px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    z-index: 1000;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
